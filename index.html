@@ -12,7 +12,7 @@
 	<div class="container">
 		<div class="wrap">
 			<div class="title">
-				<h1>Conner Calhoun</h1>
+				<h1 class="blue">Conner Calhoun</h1>
 				<h2>Computer Programmer</h2>
 			</div>
 			<div class="links">
@@ -35,6 +35,24 @@
 					<li>Command Line</li>
 				</ul>
 			</div>
+			<div class="bar-sep"></div>
+			<div class="projects">
+				<h2>Notable Projects</h2>
+				<ul>
+					<li class="project-item">
+						<a class="isaac" href="https://github.com/callium/the-binding-of-aisaac">The Binding of AIsaac</a>
+						<p>A cool machine learning project where an AI learns to play The Binding of Isaac</p>
+					</li>
+					<li class="project-item">
+						<a class="projector" href="https://github.com/callium/nec-projector-controller">NEC Projector Controller</a>
+						<p>An implementation of an NEC Projector Controller using a WPF Application and C#</p>
+					</li>
+					<li class="project-item">
+						<a class="rpg" href="https://github.com/callium/phoenix-rpg-gen">Phoenix RPGen</a>
+						<p>A work in progress site that allows users to create and generate all forms of rpg-related content</p>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </body>
@@ -48,14 +66,64 @@
 			background: hsl(0, 0%, 95%);
 			color: hsl(0, 0%, 10%);
 		}
+		body {
+			padding: 50px 0px;
+		}
 		.title {
 			border-bottom: 1px solid hsl(0, 0%, 10%);
 			text-align: center;
+		}
+		.bar-sep {
+			border-bottom: 1px solid hsl(0, 0%, 10%);
+			width: 100%;
+		}
+		.projects {
+			text-align: center;
+			width: 100%;
+		}
+		li.project-item {
+			flex: none;
+			width: 100%;
+			margin: 20px 0px;
+		}
+		li.project-item p {
+			font-size: 12px;
+			margin-top: 10px;
+			max-width: 300px;
+		}
+		li.project-item a {
+			max-width: 400px;
+			width: 100%;
+			font-size: 15px;
+			text-align: right;
+			box-shadow: none;
+			padding: 10px;
+			padding-left: 50px;
+			border: none;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position-x: 5px;
+			border-bottom: 1px dotted hsl(0, 0%, 10%);
+		}
+		li.project-item a:hover {
+			color: hsl(0, 0%, 10%);
+		}
+		a.isaac {
+			background-image: url('./img/boi.png');
+		}
+		a.projector {
+			background-image: url('./img/proj.png');
+		}
+		a.rpg {
+			background-image: url('./img/rpg.png');
 		}
 		h1 {
 			font-size: 60px;
 			padding: 0;
 			margin: 0;
+		}
+		h1.blue {
+			color: hsl(170, 35%, 55%);
 		}
 		.wrap {
 			display: flex;
@@ -64,7 +132,7 @@
 			align-items: center;
 			min-height: 500px;
 			animation-name: intro;
-		    animation-duration: 4s;
+		    animation-duration: 1s;
 		}
 		ul {
 			list-style: none;
