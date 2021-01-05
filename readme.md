@@ -2,13 +2,20 @@
 
 
 ---
-#### Languages
+#### Main
 
 
 - Python
 - C++
-- Golang
 - JavaScript
+
+---
+#### Experimenting With
+
+
+- Golang
+- Rust
+
 
 ---
 #### Interests
