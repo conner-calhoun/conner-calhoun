@@ -15,6 +15,5 @@
 
 
 - Game programming
-- Raspberry PI stuff
 - Small neat projects
 - New and interesting programming languages
