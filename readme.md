@@ -15,6 +15,7 @@
 
 - Golang
 - Rust
+- Haxe
 
 
 ---
