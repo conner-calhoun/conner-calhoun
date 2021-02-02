@@ -15,8 +15,6 @@
 
 - Haxe
 - Golang
-- C#
-
 
 ---
 #### Interests
