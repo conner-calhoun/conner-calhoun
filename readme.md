@@ -2,17 +2,12 @@
 
 
 ---
-#### Main
+#### Languages
 
 
 - Python
 - C++
 - JavaScript
-
----
-#### Experimenting With
-
-
 - Haxe
 - Golang
 
