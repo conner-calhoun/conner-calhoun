@@ -9,6 +9,7 @@
 - C++
 - JavaScript
 - Haxe
+- Golang
 
 ---
 #### Interests
