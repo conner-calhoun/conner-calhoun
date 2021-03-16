@@ -8,7 +8,6 @@
 - Python
 - C++
 - JavaScript
-- Golang
 
 ---
 #### Interests
