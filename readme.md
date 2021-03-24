@@ -8,6 +8,7 @@
 - Python
 - C++
 - JavaScript
+- Haxe
 
 ---
 #### Interests
