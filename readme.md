@@ -8,6 +8,7 @@
 - Python
 - C++
 - JavaScript
+- Golang
 - Haxe
 
 ---
