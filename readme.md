@@ -6,4 +6,5 @@
 
 
 - Game programming
-- Small neat projects
+- Programming languages
+- Small, neat projects
