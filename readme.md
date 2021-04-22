@@ -5,7 +5,6 @@
 #### Languages
 
 - Python
-- Golang
 - JavaScript
 - C++
 - C#
