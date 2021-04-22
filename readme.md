@@ -8,6 +8,7 @@
 - JavaScript
 - C++
 - C#
+- Haxe
 
 
 
