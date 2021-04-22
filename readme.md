@@ -2,17 +2,6 @@
 
 
 ---
-#### Languages
-
-- Python
-- JavaScript
-- C++
-- C#
-- Haxe
-
-
-
----
 #### Interests
 
 
