@@ -7,4 +7,4 @@
 
 - Game programming
 - Programming languages
-- Small, neat projects
+- Small projects
