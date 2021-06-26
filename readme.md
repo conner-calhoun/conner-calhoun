@@ -6,6 +6,15 @@
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=conner-calhoun&langs_count=8&layout=compact&theme=dark)
 
 
+---
+#### Langs and Stuff!
+
+<a href="https://www.python.org/" title="Python"><img src="icons/python.png" /></a>
+<a href="https://git-scm.com/" title="Git"><img src="icons/git.png" /></a>
+<a href="https://github.com/" title="GitHub"><img src="icons/github.png" /></a>
+<a href="https://en.wikipedia.org/wiki/JavaScript" title="JavaScript"><img src="icons/javascript.png" /></a>
+<a href="https://code.visualstudio.com/" title="Visual Studio Code"><img src="icons/vscode.png" /></a>
+
 
 ---
 #### Interests
