@@ -11,7 +11,7 @@
 
 <a href="https://www.cplusplus.com/" title="C++"><img src="icons/c++.png" /></a>
 <a href="https://www.python.org/" title="Python"><img src="icons/python.png" /></a>
-<a href="https://en.wikipedia.org/wiki/JavaScript" title="JavaScript"><img src="icons/javascript.png" /></a>
+<a href="https://www.javascript.com/" title="JavaScript"><img src="icons/javascript.png" /></a>
 <a href="https://git-scm.com/" title="Git"><img src="icons/git.png" /></a>
 <a href="https://godotengine.org/" title="Godot"><img src="icons/godot.png" /></a>
 <a href="https://code.visualstudio.com/" title="Visual Studio Code"><img src="icons/vscode.png" /></a>
