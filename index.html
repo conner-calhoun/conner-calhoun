@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Conner Calhoun</title>
@@ -7,7 +8,10 @@
 	<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" href="./favicon.png" />
+	<script src="deps/jquery.js"></script>
+	<script src="deps/tilt.jquery.js"></script>
 </head>
+
 <body>
 	<div class="container">
 		<div class="wrap">
@@ -17,8 +21,8 @@
 			</div>
 			<div class="links">
 				<ul>
-					<li><a href="https://www.linkedin.com/in/connercalhoun/">LINKEDIN</a></li>
-					<li><a href="https://github.com/conner-calhoun">GITHUB</a></li>
+					<li><a class="links" href="https://www.linkedin.com/in/connercalhoun/">LINKEDIN</a></li>
+					<li><a class="links" href="https://github.com/conner-calhoun">GITHUB</a></li>
 				</ul>
 			</div>
 			<div class="skills">
@@ -31,137 +35,169 @@
 				</ul>
 			</div>
 			<div class="bar-sep"></div>
+			<div class="project-header">
+				<h2>Games</h2>
+				<p>Here's a collection of a few Pico-8 / Browser Friendly Games I've worked on!</p>
+			</div>
 			<div class="projects">
-				<h2>Projects</h2>
-				<ul>
-					<li class="project-item">
-						<a class="isaac" href="https://github.com/conner-calhoun/the-binding-of-aisaac">The Binding of AIsaac</a>
-						<p>An awesome machine learning project where an AI learns to play The Binding of Isaac</p>
-					</li>
-					<li class="project-item">
-						<a class="medly" href="https://github.com/conner-calhoun/game-medly">Game Medly</a>
-						<p>A bunch of game programming tools that I have worked on in C++ & Haxe</p>
-					</li>
-					<li class="project-item">
-						<a class="rpg" href="https://conner-calhoun.github.io/godot-games/">Godot Games</a>
-						<p>A little collection of prototypes that I've created using the Godot game engine</p>
-					</li>
-				</ul>
+				<a class="game-link tiltable" href="games/slammertime.html">
+					<h4>SlammerTime</h4>
+					<p>A Small Baseball Game</p>
+					<img src="img/slammertime.png" alt="">
+				</a>
+				<a class="game-link tiltable"
+					href="https://conner-calhoun.github.io/godot-games/neo-anderthal/index.html">
+					<h4>Neo-Anderthal</h4>
+					<p>A Small Prototype Where You're a Caveman</p>
+					<img src="img/neo-anderthal.png" alt="">
+				</a>
+				<a class="game-link tiltable" href="https://conner-calhoun.github.io/godot-games/hookshot/index.html">
+					<h4>Hookshot</h4>
+					<p>A Timed Game Where You Have a Weird Grappling Hook</p>
+					<img src="img/hookshot.png" alt="">
+				</a>
+				<a class="game-link tiltable" href="games/snailtime.html">SnailTime
+					<h4>SnailTime</h4>
+					<p>Snail Life Simulator</p>
+					<img src="img/snailtime.png" alt="">
+				</a>
+				<a class="game-link tiltable" href="https://conner-calhoun.github.io/game-medly/">
+					<h4>Wobbly Thing</h4>
+					<p>A Neat Little Wobbly Thing!</p>
+					<img src="img/game-medly.png" alt="">
+				</a>
 			</div>
 		</div>
 	</div>
 </body>
-	<style>
-		html, body {
-			font-family: 'Barlow', sans-serif !important;
-			min-height: 100%;
-			background: hsl(0, 0%, 8%);
-			color: hsl(0, 0%, 95%);
+<script>
+	const tilt = $('.tiltable').tilt();
+	tilt.on('change', callback);  // parameters: event, transforms
+	tilt.on('tilt.mouseLeave', callback); // parameters: event
+	tilt.on('tilt.mouseEnter', callback); // parameters: event
+</script>
+<style>
+	html,
+	body {
+		font-family: 'Barlow', sans-serif !important;
+		min-height: 100%;
+		background: #1d2021;
+		color: #f9f5d7;
+	}
+
+	body {
+		padding: 50px 0px;
+	}
+
+	.title {
+		border-bottom: 1px solid #f9f5d7;
+		text-align: center;
+	}
+
+	.bar-sep {
+		border-bottom: 1px solid #f9f5d7;
+		width: 100%;
+	}
+
+	.project-header {
+		width: 100%;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.projects {
+		text-align: center;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+	}
+
+	.projects>a>img {
+		padding: 10px 0px;
+		border-radius: 50%;
+	}
+
+	h1 {
+		font-size: 60px;
+		padding: 0;
+		margin: 0;
+	}
+
+	h1.blue {
+		color: #fb4934;
+	}
+
+	.wrap {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		min-height: 500px;
+		animation-name: intro;
+		animation-duration: 1s;
+	}
+
+	a.links {
+		text-decoration: none !important;
+		color: #f9f5d7;
+		font-size: 35px;
+		border: 1px solid #f9f5d7;
+		border-radius: 1px;
+		display: block;
+		padding: 10px 20px;
+		min-width: 70px;
+		text-align: center;
+		transition: all .2s ease;
+		box-shadow: inset 0px 0px 0px 0px #f9f5d7;
+	}
+
+	a.game-link {
+		text-decoration: none !important;
+		color: #f9f5d7;
+		text-align: left;
+		margin: 15px;
+		padding: 15px;
+		border-radius: 20px;
+		box-shadow: 0px 0px 20px 1px black;
+	}
+
+	a.links:hover {
+		color: hsl(0, 0%, 10%);
+		box-shadow: inset 0px 100px 0px 0px #f9f5d7;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	li {
+		flex: 1;
+		margin: 20px;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	@keyframes intro {
+		from {
+			opacity: 0;
 		}
-		body {
-			padding: 50px 0px;
+
+		to {
+			opacity: 1;
 		}
-		.title {
-			border-bottom: 1px solid hsl(0, 0%, 95%);
-			text-align: center;
-		}
-		.bar-sep {
-			border-bottom: 1px solid hsl(0, 0%, 95%);
-			width: 100%;
-		}
-		.projects {
-			text-align: center;
-			width: 100%;
-		}
-		li.project-item {
-			flex: none;
-			width: 100%;
-			margin: 20px 0px;
-		}
-		li.project-item p {
-			font-size: 12px;
-			margin-top: 10px;
-			max-width: 300px;
-		}
-		li.project-item a {
-			max-width: 400px;
-			width: 100%;
-			font-size: 15px;
-			text-align: right;
-			box-shadow: none;
-			padding: 10px;
-			padding-left: 50px;
-			border: none;
-			background-size: contain;
-			background-repeat: no-repeat;
-			background-position-x: 5px;
-			border-bottom: 1px dotted hsl(0, 0%, 95%);
-		}
-		li.project-item a:hover {
-			color: hsl(0, 0%, 90%);
-		}
-		a.isaac {
-			background-image: url('./img/isaac.png');
-		}
-		a.medly {
-			background-image: url('./img/game-medly.png');
-		}
-		a.rpg {
-			background-image: url('./img/godot.png');
-		}
-		h1 {
-			font-size: 60px;
-			padding: 0;
-			margin: 0;
-		}
-		h1.blue {
-			color: hsl(170, 35%, 55%);
-		}
-		.wrap {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			min-height: 500px;
-			animation-name: intro;
-		    animation-duration: 1s;
-		}
-		ul {
-			list-style: none;
-			margin: 0;
-			padding: 0;
-			display: flex;
-			flex-wrap: wrap;
-		}
-		li {
-			flex: 1;
-		    margin: 20px;
-		    text-align: center;
-		    display: flex;
-		    flex-direction: column;
-		    align-items: center;
-		    justify-content: center;
-		}
-		a {
-			text-decoration: none !important;
-			color: hsl(0, 0%, 95%);
-			font-size: 35px;
-			border: 1px solid hsl(0, 0%, 95%);
-			border-radius: 1px;
-			display: block;
-			padding: 10px 20px;
-			min-width: 70px;
-			text-align: center;
-			transition: all .2s ease;
-			box-shadow: inset 0px 0px 0px 0px hsl(0,0%,95%);
-		}
-		a:hover {
-			color: hsl(0, 0%, 10%);
-			box-shadow: inset 0px 100px 0px 0px hsl(0,0%,95%);
-		}
-		@keyframes intro{
-			from{opacity: 0;}
-			to{opacity: 1;}
-		}
-	</style>
+	}
+</style>
+
 </html>
