@@ -77,12 +77,18 @@
 	tilt.on('tilt.mouseEnter', callback); // parameters: event
 </script>
 <style>
+	/*
+		Background: #2d343a
+		Highlight: #9fb7cb
+		Color: white
+	*/
+
 	html,
 	body {
 		font-family: 'Barlow', sans-serif !important;
 		min-height: 100%;
-		background: #1d2021;
-		color: #f9f5d7;
+		background: #2d343a;
+		color: #ffffff;
 	}
 
 	body {
@@ -90,12 +96,12 @@
 	}
 
 	.title {
-		border-bottom: 1px solid #f9f5d7;
+		border-bottom: 1px solid #9fb7cb;
 		text-align: center;
 	}
 
 	.bar-sep {
-		border-bottom: 1px solid #f9f5d7;
+		border-bottom: 1px solid #9fb7cb;
 		width: 100%;
 	}
 
@@ -118,8 +124,7 @@
 	}
 
 	.projects>a>img {
-		padding: 10px 0px;
-		border-radius: 50%;
+		padding: 0px;
 		max-width: 350px;
 	}
 
@@ -130,7 +135,7 @@
 	}
 
 	h1.blue {
-		color: #fb4934;
+		color: #9fb7cb;
 	}
 
 	.wrap {
@@ -145,32 +150,31 @@
 
 	a.links {
 		text-decoration: none !important;
-		color: #f9f5d7;
+		color: #ffffff;
 		font-size: 35px;
-		border: 1px solid #f9f5d7;
-		border-radius: 1px;
+		border: 1px solid #ffffff;
 		display: block;
 		padding: 10px 20px;
 		min-width: 70px;
 		text-align: center;
 		transition: all .2s ease;
-		box-shadow: inset 0px 0px 0px 0px #f9f5d7;
-	}
-
-	a.game-link {
-		text-decoration: none !important;
-		color: #f9f5d7;
-		text-align: left;
-		margin: 15px;
-		padding: 15px;
-		border-radius: 20px;
-		box-shadow: 0px 0px 20px 1px black;
-		max-width: 400px;
+		box-shadow: inset 0px 0px 0px 0px #ffffff;
 	}
 
 	a.links:hover {
 		color: hsl(0, 0%, 10%);
-		box-shadow: inset 0px 100px 0px 0px #f9f5d7;
+		box-shadow: inset 0px 100px 0px 0px #9fb7cb;
+	}
+
+	a.game-link {
+		text-decoration: none !important;
+		color: #ffffff;
+		text-align: left;
+		margin: 15px;
+		padding: 15px;
+		box-shadow: 0px 0px 3px 0px black;
+		max-width: 400px;
+		background: #2d343a;
 	}
 
 	ul {
