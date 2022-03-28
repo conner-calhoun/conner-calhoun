@@ -2,208 +2,97 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Conner Calhoun</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="./favicon.png" />
-	<script src="deps/jquery.js"></script>
-	<script src="deps/tilt.jquery.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conner Calhoun</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
-	<div class="container">
-		<div class="wrap">
-			<div class="title">
-				<h1 class="blue">Conner Calhoun</h1>
-				<h2>Software Engineer</h2>
-			</div>
-			<div class="links">
-				<ul>
-					<li><a class="links" href="https://www.linkedin.com/in/connercalhoun/">LINKEDIN</a></li>
-					<li><a class="links" href="https://github.com/conner-calhoun">GITHUB</a></li>
-				</ul>
-			</div>
-			<div class="skills">
-				<ul>
-					<li>C++</li>
-					<li>Python</li>
-					<li>JavaScript</li>
-					<li>C#</li>
-					<li>Golang</li>
-				</ul>
-			</div>
-			<div class="bar-sep"></div>
-			<div class="project-header">
-				<h2>Games</h2>
-				<p>Here's a collection of a few Pico-8 / Browser Friendly Games I've worked on!</p>
-			</div>
-			<div class="projects">
-				<a class="game-link tiltable" href="games/slammertime.html">
-					<h4>SlammerTime</h4>
-					<p>A Small Baseball Game</p>
-					<img src="img/slammertime.png" alt="">
-				</a>
-				<a class="game-link tiltable"
-					href="https://conner-calhoun.github.io/godot-games/neo-anderthal/index.html">
-					<h4>Neo-Anderthal</h4>
-					<p>A Small Prototype Where You're a Caveman</p>
-					<img src="img/neo-anderthal.png" alt="">
-				</a>
-				<a class="game-link tiltable" href="https://conner-calhoun.github.io/godot-games/hookshot/index.html">
-					<h4>Hookshot</h4>
-					<p>A Timed Game Where You Have a Weird Grappling Hook</p>
-					<img src="img/hookshot.png" alt="">
-				</a>
-				<a class="game-link tiltable" href="games/snailtime.html">
-					<h4>SnailTime</h4>
-					<p>Snail Life Simulator</p>
-					<img src="img/snailtime.png" alt="">
-				</a>
-				<a class="game-link tiltable" href="https://conner-calhoun.github.io/game-medly/">
-					<h4>Wobbly Thing</h4>
-					<p>A Neat Little Wobbly Thing!</p>
-					<img src="img/game-medly.png" alt="">
-				</a>
-			</div>
-		</div>
-	</div>
+    <div class="stuff">
+        <h1>conner calhoun</h1>
+        <h2>software engineer</h2>
+        <div class="skills">
+            <h4>what I can do</h4>
+            <ul>
+                <li>c++</li>
+                <li>python</li>
+                <li>rust</li>
+                <li>oop</li>
+                <li>non-oop</li>
+            </ul>
+        </div>
+        <div class="links">
+            <h4>where to find me</h4>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/connercalhoun/">linkedin</a></li>
+                <li><a href="https://github.com/conner-calhoun">github</a></li>
+                <li><a href="https://joyrev.itch.io/">itch.io</a></li>
+            </ul>
+        </div>
+        <div class="fun-stuff">
+            <h4>fun stuff</h4>
+            <ul>
+                <li>
+                    <a href="games/slammertime.html">slammertime - a baseball game made using pico-8</a>
+                </li>
+                <li>
+                    <a href="https://conner-calhoun.github.io/godot-games/neo-anderthal/index.html">neo-anderthal - a
+                        prototype made while learning godot</a>
+                </li>
+                <li>
+                    <a href="https://conner-calhoun.github.io/godot-games/hookshot/index.html">hookshot - using a weird
+                        grappling hook, try to get to the door</a>
+                </li>
+                <li>
+                    <a href="games/snailtime.html">snailtime - the start of a snail life simulator made using pico-8</a>
+                </li>
+                <li>
+                    <a href="https://conner-calhoun.github.io/game-medly">game-medly - don't click this one</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
-<script>
-	const tilt = $('.tiltable').tilt();
-	tilt.on('change', callback);  // parameters: event, transforms
-	tilt.on('tilt.mouseLeave', callback); // parameters: event
-	tilt.on('tilt.mouseEnter', callback); // parameters: event
-</script>
+
 <style>
-	/*
-		Background: #2d343a
-		Highlight: #9fb7cb
-		Color: white
-	*/
+    html,
+    body {
+        font-family: 'IBM Plex Mono', monospace;
+        min-height: 100%;
+        background: white;
+        color: black;
+    }
 
-	html,
-	body {
-		font-family: 'Barlow', sans-serif !important;
-		min-height: 100%;
-		background: #2d343a;
-		color: #ffffff;
-	}
+    a {
+        text-decoration: none !important;
+        color: black;
+    }
 
-	body {
-		padding: 50px 0px;
-	}
+    ul {
+        list-style-type: circle;
+    }
 
-	.title {
-		border-bottom: 1px solid #9fb7cb;
-		text-align: center;
-	}
+    h1,
+    h2 {
+        margin: 0px;
+    }
 
-	.bar-sep {
-		border-bottom: 1px solid #9fb7cb;
-		width: 100%;
-	}
+    h4 {
+        margin-bottom: 0px;
+    }
 
-	.project-header {
-		width: 100%;
-		align-items: center;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
+    ul {
+        margin-top: 0px;
+    }
 
-	.projects {
-		text-align: center;
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		align-items: flex-start;
-		justify-content: space-evenly;
-		flex-wrap: wrap;
-	}
-
-	.projects>a>img {
-		padding: 0px;
-		max-width: 350px;
-	}
-
-	h1 {
-		font-size: 60px;
-		padding: 0;
-		margin: 0;
-	}
-
-	h1.blue {
-		color: #9fb7cb;
-	}
-
-	.wrap {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		min-height: 500px;
-		animation-name: intro;
-		animation-duration: 1s;
-	}
-
-	a.links {
-		text-decoration: none !important;
-		color: #ffffff;
-		font-size: 35px;
-		border: 1px solid #ffffff;
-		display: block;
-		padding: 10px 20px;
-		min-width: 70px;
-		text-align: center;
-		transition: all .2s ease;
-		box-shadow: inset 0px 0px 0px 0px #ffffff;
-	}
-
-	a.links:hover {
-		color: hsl(0, 0%, 10%);
-		box-shadow: inset 0px 100px 0px 0px #9fb7cb;
-	}
-
-	a.game-link {
-		text-decoration: none !important;
-		color: #ffffff;
-		text-align: left;
-		margin: 15px;
-		padding: 15px;
-		box-shadow: 0px 0px 3px 0px black;
-		max-width: 400px;
-		background: #2d343a;
-	}
-
-	ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		display: flex;
-		flex-wrap: wrap;
-	}
-
-	li {
-		flex: 1;
-		margin: 20px;
-		text-align: center;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-
-	@keyframes intro {
-		from {
-			opacity: 0;
-		}
-
-		to {
-			opacity: 1;
-		}
-	}
+    .stuff {
+        padding: 20px;
+    }
 </style>
 
 </html>
